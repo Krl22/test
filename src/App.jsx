@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const keyxd = import.meta.env.VITE_KEY_XD;
+  console.log(import.meta.env.VITE_KEY_XD);
 
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{keyxd}</h1>
+      <h1>{import.meta.env.VITE_KEY_XD}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
